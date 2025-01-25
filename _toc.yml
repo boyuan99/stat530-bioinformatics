@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: files/intro
+chapters:
+  - file: files/GitHub-Copilot-Apply
+  - file: files/Setting-Up-Conda-in-macOS-A-Complete-Guide
+  - file: files/Setting-Up-Conda-in-Windows-A-Complete-Guide
