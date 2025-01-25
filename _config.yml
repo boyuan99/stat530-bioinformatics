@@ -2,6 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 title: STAT 530
 author: Bo Yuan
+copyright: "2025"
 logo: logo.png
 
 execute:
