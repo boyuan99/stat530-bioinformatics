@@ -80,7 +80,7 @@ At line:1 char:1
    ```
 
 To add environment variables:
-1. Right-click "This PC" → Properties
+1. Got to "Settings" → "System" → "About" 
 2. Click "Advanced system settings"
 3. Click "Environment Variables"
 4. Under "System variables", find "Path"
