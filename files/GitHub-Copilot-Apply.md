@@ -1,8 +1,12 @@
 # GitHub Copilot Apply
 
-Author: Bo Yuan 
-Contact: boy6@illinois.edu
+Author: Bo Yuan (boy6@illinois.edu)
 
+Course: STAT 530, Spring 2025
+
+
+
+---
 
 
 

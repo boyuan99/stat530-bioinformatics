@@ -10,16 +10,6 @@ This tutorial will walk you through setting up Conda, Miniconda, or Miniforge in
 
 
 
-## Table of Contents
-1. [Installation Options](#installation-options)
-2. [Terminal Integration](#terminal-integration)
-3. [Understanding and Setting Up Your Shell](#understanding-and-setting-up-your-shell)
-3. [Common Errors and Solutions](#common-errors-and-solutions)
-4. [Managing Multiple Conda Installations](#managing-multiple-conda-installations)
-5. [Best Practices](#best-practices)
-
-
-
 ## Installation Options
 
 ### Miniforge (Recommended)
@@ -291,6 +281,12 @@ conda create -n stat530 python=3.10
 2. Activate environments:
 ```bash
 conda activate stat530
+```
+
+3. Install Jupyter (make sure you are under stat530 environment before you do this):
+
+```bash
+pip install jupyter
 ```
 
 

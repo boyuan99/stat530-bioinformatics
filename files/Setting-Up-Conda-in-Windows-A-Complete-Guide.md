@@ -8,15 +8,6 @@ Course: STAT 530, Spring 2025
 
 This tutorial will walk you through setting up Conda, Miniconda, or Miniforge in Windows, including installation, environment setup, and common troubleshooting steps.
 
-
-
-## Table of Contents
-1. [Installation Options](#installation-options)
-2. [Setting Up PowerShell/CMD Integration](#setting-up-powershellcmd-integration)
-3. [Common Errors and Solutions](#common-errors-and-solutions)
-4. [Managing Multiple Conda Installations](#managing-multiple-conda-installations)
-5. [Best Practices](#best-practices)
-
  
 
 ## Installation Options
@@ -273,6 +264,11 @@ conda create -n stat530 python=3.10
 2. Activate environments:
 ```bash
 conda activate stat530
+```
+
+3. Install Jupyter (make sure you are under stat530 environment before you do this):
+```bash
+pip install jupyter
 ```
 
 
