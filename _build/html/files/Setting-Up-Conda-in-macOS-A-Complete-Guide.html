@@ -168,10 +168,15 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Setting Up</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="GitHub-Copilot-Apply.html">GitHub Copilot Apply</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Setting Up Conda in macOS: A Complete Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Setting-Up-Conda-in-Windows-A-Complete-Guide.html">Setting Up Conda in Windows: A Complete Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Homework1.html">Homework1</a></li>
 </ul>
 
     </div>
@@ -381,7 +386,6 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-options">Installation Options</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniforge-recommended">Miniforge (Recommended)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniconda-alternative">Miniconda (Alternative)</a></li>
@@ -426,17 +430,6 @@
 <p>Course: STAT 530, Spring 2025</p>
 <hr class="docutils" />
 <p>This tutorial will walk you through setting up Conda, Miniconda, or Miniforge in macOS using graphical installers.</p>
-<section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="#installation-options"><span class="xref myst">Installation Options</span></a></p></li>
-<li><p><a class="reference internal" href="#terminal-integration"><span class="xref myst">Terminal Integration</span></a></p></li>
-<li><p><a class="reference internal" href="#understanding-and-setting-up-your-shell"><span class="xref myst">Understanding and Setting Up Your Shell</span></a></p></li>
-<li><p><a class="reference internal" href="#common-errors-and-solutions"><span class="xref myst">Common Errors and Solutions</span></a></p></li>
-<li><p><a class="reference internal" href="#managing-multiple-conda-installations"><span class="xref myst">Managing Multiple Conda Installations</span></a></p></li>
-<li><p><a class="reference internal" href="#best-practices"><span class="xref myst">Best Practices</span></a></p></li>
-</ol>
-</section>
 <section id="installation-options">
 <h2>Installation Options<a class="headerlink" href="#installation-options" title="Link to this heading">#</a></h2>
 <section id="miniforge-recommended">
@@ -728,6 +721,12 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>stat530
 </pre></div>
 </div>
+<ol class="arabic simple" start="3">
+<li><p>Install Jupyter (make sure you are under stat530 environment before you do this):</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyter
+</pre></div>
+</div>
 </section>
 <section id="apple-silicon-m1-m2-specific-notes">
 <h2>Apple Silicon (M1/M2) Specific Notes<a class="headerlink" href="#apple-silicon-m1-m2-specific-notes" title="Link to this heading">#</a></h2>
@@ -834,7 +833,6 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-options">Installation Options</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniforge-recommended">Miniforge (Recommended)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniconda-alternative">Miniconda (Alternative)</a></li>
