@@ -9,6 +9,7 @@ parts:
       - file: files/GitHub-Copilot-Apply
       - file: files/Setting-Up-Conda-in-macOS-A-Complete-Guide
       - file: files/Setting-Up-Conda-in-Windows-A-Complete-Guide
+      - file: files/Setting-Up-R-In-Terminal-Windows
   - caption: Homeworks
     chapters:
       - file: files/Homework1

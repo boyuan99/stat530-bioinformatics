@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework1 &#8212; STAT 530</title>
+    <title>Setting Up R in Terminal (Windows) and Jupyter &#8212; STAT 530</title>
   
   
   
@@ -60,10 +60,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'files/Homework1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'files/Setting-Up-R-In-Terminal-Windows';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Setting Up R in Terminal (Windows) and Jupyter" href="Setting-Up-R-In-Terminal-Windows.html" />
+    <link rel="next" title="Homework1" href="Homework1.html" />
+    <link rel="prev" title="Setting Up Conda in Windows: A Complete Guide" href="Setting-Up-Conda-in-Windows-A-Complete-Guide.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -168,15 +169,15 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Setting Up</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="GitHub-Copilot-Apply.html">GitHub Copilot Apply</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Setting-Up-Conda-in-macOS-A-Complete-Guide.html">Setting Up Conda in macOS: A Complete Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Setting-Up-Conda-in-Windows-A-Complete-Guide.html">Setting Up Conda in Windows: A Complete Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Setting-Up-R-In-Terminal-Windows.html">Setting Up R in Terminal (Windows) and Jupyter</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Setting Up R in Terminal (Windows) and Jupyter</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework1</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Homework1.html">Homework1</a></li>
 </ul>
 
     </div>
@@ -253,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/boyuan99/stat530-bioinformatics/edit/gh-pages/./files/Homework1.md" target="_blank"
+      <li><a href="https://github.com/boyuan99/stat530-bioinformatics/edit/gh-pages/./files/Setting-Up-R-In-Terminal-Windows.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -270,7 +271,7 @@
       
       
       
-      <li><a href="https://github.com/boyuan99/stat530-bioinformatics/issues/new?title=Issue%20on%20page%20%2Ffiles/Homework1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/boyuan99/stat530-bioinformatics/issues/new?title=Issue%20on%20page%20%2Ffiles/Setting-Up-R-In-Terminal-Windows.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -300,7 +301,7 @@
       
       
       
-      <li><a href="../_sources/files/Homework1.md" target="_blank"
+      <li><a href="../_sources/files/Setting-Up-R-In-Terminal-Windows.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,7 +377,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework1</h1>
+    <h1>Setting Up R in Terminal (Windows) and Jupyter</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,14 +387,25 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notice">Notice</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submission-files">Submission Files</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-notes-document-if-applicable">Additional Notes Document (if applicable)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-installation">Initial Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-installation">Verifying Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-r-in-windows-powershell">Running R in Windows PowerShell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-common-issues">Troubleshooting Common Issues</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#path-configuration">Path Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powershell-alias-conflict">PowerShell Alias Conflict</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#check-for-alias">Check for Alias</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-alias">Remove Alias</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist">Checklist</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-criteria">Grading Criteria</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submission-method">Submission Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-direct-execution">Alternative Direct Execution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-r-in-jupyter-notebook">Setting Up R in Jupyter Notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-steps">Installation Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-jupyter-integration">Troubleshooting Jupyter Integration</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -405,165 +417,129 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="homework1">
-<h1>Homework1<a class="headerlink" href="#homework1" title="Link to this heading">#</a></h1>
-<section id="notice">
-<h2>Notice<a class="headerlink" href="#notice" title="Link to this heading">#</a></h2>
-<p>You <strong>don’t have to</strong> specifically set up python if you have conda/mamba installed.</p>
-<p>You <strong>don’t have to</strong> install mamba if you already have conda installed on your computer.</p>
-<p>Visual Studio Code (VSCode) is the <strong>most encouraged</strong> editor to install.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="setting-up-r-in-terminal-windows-and-jupyter">
+<h1>Setting Up R in Terminal (Windows) and Jupyter<a class="headerlink" href="#setting-up-r-in-terminal-windows-and-jupyter" title="Link to this heading">#</a></h1>
+<p><strong>Author</strong>: Bo Yuan (<a class="reference external" href="mailto:boy6&#37;&#52;&#48;illinois&#46;edu">boy6<span>&#64;</span>illinois<span>&#46;</span>edu</a>)</p>
+<p><strong>Course</strong>: STAT 530, Spring 2025</p>
+<blockquote>
+<div><p>This guide covers setting up R in <strong>Windows terminal</strong> (PowerShell, CMD). This setup is <strong>optional</strong> but potentially helpful for future study.</p>
+<p>Note for macOS users: After installing R, terminal setup is usually automatic. Contact TA if you encounter issues.</p>
+</div></blockquote>
+<section id="initial-installation">
+<h2>Initial Installation<a class="headerlink" href="#initial-installation" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Download R from the <a class="reference external" href="https://cran.r-project.org/">CRAN website</a></p></li>
+<li><p>For Windows users, select and install the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file with default settings</p></li>
+<li><p>Make sure to check “Add R to system PATH” during installation</p></li>
+</ol>
 </section>
-<section id="submission-files">
-<h2>Submission Files<a class="headerlink" href="#submission-files" title="Link to this heading">#</a></h2>
-<p>You only need to submit <strong>ONE</strong> PDF file that includes all the following information:</p>
+<section id="verifying-installation">
+<h2>Verifying Installation<a class="headerlink" href="#verifying-installation" title="Link to this heading">#</a></h2>
+<p>Open PowerShell and run:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="nb">R </span><span class="p">-</span><span class="n">-version</span>
+</pre></div>
+</div>
+</section>
+<section id="running-r-in-windows-powershell">
+<h2>Running R in Windows PowerShell<a class="headerlink" href="#running-r-in-windows-powershell" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Start R Interactive Mode</strong>: Type <code class="docutils literal notranslate"><span class="pre">R</span></code> and press Enter</p></li>
+<li><p><strong>Run R Scripts</strong>: Use <code class="docutils literal notranslate"><span class="pre">Rscript</span> <span class="pre">script.R</span></code> to execute R files</p></li>
+</ul>
+</section>
+<section id="troubleshooting-common-issues">
+<h2>Troubleshooting Common Issues<a class="headerlink" href="#troubleshooting-common-issues" title="Link to this heading">#</a></h2>
+<section id="path-configuration">
+<h3>Path Configuration<a class="headerlink" href="#path-configuration" title="Link to this heading">#</a></h3>
+<p>If R command is not found:</p>
+<ol class="arabic simple">
+<li><p>Add R installation path to system environment variable <code class="docutils literal notranslate"><span class="pre">Path</span></code></p></li>
+<li><p>Typical path: <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files\R\R-x.x.x\bin</span></code> (replace x.x.x with your R version)</p></li>
+<li><p>Verify path with: <code class="docutils literal notranslate"><span class="pre">$env:Path</span></code> in PowerShell</p></li>
+</ol>
+</section>
+<section id="powershell-alias-conflict">
+<h3>PowerShell Alias Conflict<a class="headerlink" href="#powershell-alias-conflict" title="Link to this heading">#</a></h3>
+<section id="check-for-alias">
+<h4>Check for Alias<a class="headerlink" href="#check-for-alias" title="Link to this heading">#</a></h4>
+<p>First, check if ‘r’ is already defined as an alias:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="nb">Get-Alias</span> <span class="nb">r</span>
+</pre></div>
+</div>
+<p>If you see the following output, there’s an alias conflict:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CommandType</span>     <span class="n">Name</span>                <span class="n">Version</span>    <span class="n">Source</span>
+<span class="o">-----------</span>     <span class="o">----</span>                <span class="o">-------</span>    <span class="o">------</span>
+<span class="n">Alias</span>           <span class="n">r</span> <span class="o">-&gt;</span> <span class="n">Invoke</span><span class="o">-</span><span class="n">History</span>
+</pre></div>
+</div>
+<p>Note: Typically it’s <code class="docutils literal notranslate"><span class="pre">Invoke-History</span></code>, but could be different if you’ve set custom aliases.</p>
+</section>
+<section id="remove-alias">
+<h4>Remove Alias<a class="headerlink" href="#remove-alias" title="Link to this heading">#</a></h4>
+<p>⚠️ Only proceed if you don’t need <code class="docutils literal notranslate"><span class="pre">r</span></code> for <code class="docutils literal notranslate"><span class="pre">Invoke-History</span></code>:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="nb">Remove-Item</span> <span class="k">Alias</span><span class="p">:</span><span class="nb">r</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="alternative-direct-execution">
+<h3>Alternative Direct Execution<a class="headerlink" href="#alternative-direct-execution" title="Link to this heading">#</a></h3>
+<p>If alias issues persist, you can directly call R.exe:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">&amp;</span> <span class="s2">&quot;C:\Program Files\R\R-x.x.x\bin\R.exe&quot;</span>
+</pre></div>
+</div>
+<p>(Replace x.x.x with your actual R version)</p>
+</section>
+</section>
+<section id="setting-up-r-in-jupyter-notebook">
+<h2>Setting Up R in Jupyter Notebook<a class="headerlink" href="#setting-up-r-in-jupyter-notebook" title="Link to this heading">#</a></h2>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Make sure you have  Jupyter Notebook installed</p></li>
+<li><p>R must be properly installed on your system (follow steps above)</p></li>
+</ol>
+</section>
+<section id="installation-steps">
+<h3>Installation Steps<a class="headerlink" href="#installation-steps" title="Link to this heading">#</a></h3>
 <ol class="arabic">
-<li><p><strong>VSCode Extensions Screenshot</strong></p>
-<ul class="simple">
-<li><p>Requirements:</p>
+<li><p><strong>Install IRkernel</strong>
+Open R and run these commands:</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;IRkernel&#39;</span><span class="p">)</span>
+<span class="n">IRkernel</span><span class="o">::</span><span class="nf">installspec</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Verify Installation</strong></p>
 <ul>
-<li><p>Show all required installed extensions</p></li>
-<li><p>Please make your screenshots clear and readable</p></li>
-<li><p>Must include the following extensions:</p>
-<ul>
-<li><p>GitHub Copilot</p></li>
-<li><p>Jupyter</p></li>
-<li><p>Python</p></li>
-<li><p>R</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Installation Verification Document</strong></p>
-<ul class="simple">
-<li><p>Include the output of the following commands (not necessarily all of them, please read the comments carefully):</p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># conda/mamba environments information (must include the stat530 environment, read the &quot;Setting Up Conda...&quot; part if you don&#39;t know how to do this)</span>
-conda<span class="w"> </span>env<span class="w"> </span>list
-
-<span class="c1"># Expected output example:</span>
-<span class="c1"># conda environments:</span>
-<span class="c1">#</span>
-base<span class="w">                   </span>*<span class="w"> </span>/your_path/miniforge3
-stat530<span class="w">                  </span>/your_path/miniforge3/envs/stat530
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mamba version information (you only need one out of mamba/conda)</span>
-mamba<span class="w"> </span>--version
-
-<span class="c1"># Expected output example:</span>
-mamba<span class="w"> </span><span class="m">1</span>.5.9
-conda<span class="w"> </span><span class="m">24</span>.9.0
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conda version information (you only need one out of mamba/conda)</span>
-conda<span class="w"> </span>--version
-
-<span class="c1"># Expected output example:</span>
-conda<span class="w"> </span><span class="m">24</span>.9.0
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Jupyter version information</span>
-jupyter<span class="w"> </span>--version
-
-<span class="c1"># Expected output example:</span>
-Selected<span class="w"> </span>Jupyter<span class="w"> </span>core<span class="w"> </span>packages...
-IPython<span class="w">          </span>:<span class="w"> </span><span class="m">8</span>.31.0
-ipykernel<span class="w">        </span>:<span class="w"> </span><span class="m">6</span>.29.5
-ipywidgets<span class="w">       </span>:<span class="w"> </span>not<span class="w"> </span>installed
-jupyter_client<span class="w">   </span>:<span class="w"> </span><span class="m">8</span>.6.3
-jupyter_core<span class="w">     </span>:<span class="w"> </span><span class="m">5</span>.7.2
-jupyter_server<span class="w">   </span>:<span class="w"> </span><span class="m">2</span>.15.0
-jupyterlab<span class="w">       </span>:<span class="w"> </span><span class="m">4</span>.3.4
-nbclient<span class="w">         </span>:<span class="w"> </span><span class="m">0</span>.10.2
-nbconvert<span class="w">        </span>:<span class="w"> </span><span class="m">7</span>.16.4
-nbformat<span class="w">         </span>:<span class="w"> </span><span class="m">5</span>.10.4
-notebook<span class="w">         </span>:<span class="w"> </span>not<span class="w"> </span>installed
-qtconsole<span class="w">        </span>:<span class="w"> </span>not<span class="w"> </span>installed
-traitlets<span class="w">        </span>:<span class="w"> </span><span class="m">5</span>.14.3
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python version information (not necessary if you have conda/mamba installed)</span>
-python<span class="w"> </span>--version
-
-<span class="c1"># Expected output example:</span>
-Python<span class="w"> </span><span class="m">3</span>.11.5
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># R version information (not necessary)</span>
-R<span class="w"> </span>--version
-
-<span class="c1"># Expected output example:</span>
-R<span class="w"> </span>version<span class="w"> </span><span class="m">4</span>.4.2<span class="w"> </span><span class="o">(</span><span class="m">2024</span>-10-31<span class="o">)</span><span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;Pile of Leaves&quot;</span>
-Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">2024</span><span class="w"> </span>The<span class="w"> </span>R<span class="w"> </span>Foundation<span class="w"> </span><span class="k">for</span><span class="w"> </span>Statistical<span class="w"> </span>Computing
-Platform:<span class="w"> </span>x86_64-apple-darwin20
-
-R<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software<span class="w"> </span>and<span class="w"> </span>comes<span class="w"> </span>with<span class="w"> </span>ABSOLUTELY<span class="w"> </span>NO<span class="w"> </span>WARRANTY.
-You<span class="w"> </span>are<span class="w"> </span>welcome<span class="w"> </span>to<span class="w"> </span>redistribute<span class="w"> </span>it<span class="w"> </span>under<span class="w"> </span>the<span class="w"> </span>terms<span class="w"> </span>of<span class="w"> </span>the
-GNU<span class="w"> </span>General<span class="w"> </span>Public<span class="w"> </span>License<span class="w"> </span>versions<span class="w"> </span><span class="m">2</span><span class="w"> </span>or<span class="w"> </span><span class="m">3</span>.
-For<span class="w"> </span>more<span class="w"> </span>information<span class="w"> </span>about<span class="w"> </span>these<span class="w"> </span>matters<span class="w"> </span>see
-https://www.gnu.org/licenses/.
+<li><p>Launch Jupyter Notebook:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
 </pre></div>
 </div>
 </li>
-<li><p><strong>GitHub Account Information</strong></p>
-<ul class="simple">
-<li><p>GitHub username</p></li>
-<li><p>Screenshot of GitHub Education verification status (if you decide to use GitHub Copilot)</p></li>
+<li><p>Click “New” and verify that “R” appears in the dropdown menu</p></li>
 </ul>
 </li>
 </ol>
-<section id="additional-notes-document-if-applicable">
-<h3>Additional Notes Document (if applicable)<a class="headerlink" href="#additional-notes-document-if-applicable" title="Link to this heading">#</a></h3>
-<p>If you installed any components differently from the assignment requirements, note in the submitted file:</p>
-<ul class="simple">
-<li><p>Specify which components were installed through alternative methods (for example, different AI tool, like cursor or cline, or different IDE, like Pycharm).</p></li>
-<li><p>Confirm that these alternatives provide the same functionality as required (you don’t have to show me this).</p></li>
-</ul>
 </section>
-</section>
-<section id="checklist">
-<h2>Checklist<a class="headerlink" href="#checklist" title="Link to this heading">#</a></h2>
-<p>Before submission, verify:</p>
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> VSCode screenshot is clear and complete. (If you decide to use VSCode)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> All required extensions are visible in the screenshot. (GitHub Copilot, Jupyter, Python, and R extensions)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Version information includes output for all required software</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> GitHub account is set up. (If you decide to use Copilot)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>If alternative installations were used, they should be detailed in the notes.</strong></p></li>
-</ul>
-</section>
-<section id="grading-criteria">
-<h2>Grading Criteria<a class="headerlink" href="#grading-criteria" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>VSCode Environment Setup</p>
+<section id="troubleshooting-jupyter-integration">
+<h3>Troubleshooting Jupyter Integration<a class="headerlink" href="#troubleshooting-jupyter-integration" title="Link to this heading">#</a></h3>
+<p>If R kernel doesn’t appear:</p>
+<ol class="arabic simple">
+<li><p>Ensure R installation is in system PATH</p></li>
+<li><p>Try running IRkernel installation with admin privileges</p></li>
+<li><p>Restart Jupyter Notebook after installation</p></li>
+</ol>
+<p>Common Issues:</p>
 <ul>
-<li><p>All required extensions correctly installed</p></li>
-<li><p>Screenshot is clear and meets requirements</p></li>
-</ul>
-</li>
-<li><p>Development Tools Installation</p>
-<ul>
-<li><p>R, Python, Jupyter, and Mamba (Conda) correctly installed</p></li>
-<li><p>Version information properly displayed</p></li>
-</ul>
-</li>
-<li><p>GitHub Setup (only if you decide to use Copilot)</p>
-<ul>
-<li><p>Account creation complete</p></li>
-<li><p>GitHub Education verification successful</p></li>
-<li><p>Copilot accessible</p></li>
-</ul>
+<li><p>If you see “kernel not found” errors, reinstall IRkernel</p></li>
+<li><p>For package installation errors, try:</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;IRkernel&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">repos</span><span class="o">=</span><span class="s">&#39;http://cran.us.r-project.org&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </li>
 </ul>
 </section>
-<section id="submission-method">
-<h2>Submission Method<a class="headerlink" href="#submission-method" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Submit the PDF file to the Canvas.</p></li>
-<li><p>Ensure correct file naming format: Homework1_NetID_Name.pdf</p></li>
-</ul>
 </section>
 </section>
 
@@ -598,13 +574,22 @@ https://www.gnu.org/licenses/.
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Setting-Up-R-In-Terminal-Windows.html"
+       href="Setting-Up-Conda-in-Windows-A-Complete-Guide.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Setting Up R in Terminal (Windows) and Jupyter</p>
+        <p class="prev-next-title">Setting Up Conda in Windows: A Complete Guide</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Homework1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Homework1</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -623,14 +608,25 @@ https://www.gnu.org/licenses/.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notice">Notice</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submission-files">Submission Files</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-notes-document-if-applicable">Additional Notes Document (if applicable)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-installation">Initial Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-installation">Verifying Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-r-in-windows-powershell">Running R in Windows PowerShell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-common-issues">Troubleshooting Common Issues</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#path-configuration">Path Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powershell-alias-conflict">PowerShell Alias Conflict</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#check-for-alias">Check for Alias</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-alias">Remove Alias</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist">Checklist</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-criteria">Grading Criteria</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submission-method">Submission Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-direct-execution">Alternative Direct Execution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-r-in-jupyter-notebook">Setting Up R in Jupyter Notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-steps">Installation Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-jupyter-integration">Troubleshooting Jupyter Integration</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
