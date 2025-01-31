@@ -60,7 +60,12 @@ Once approved, you can access all student benefits usually within 2-3 business d
 
 After your student benefits are activated , you can activate GitHub Copilot Pro for free:
 
-1. Follow the instructions in the [GitHub Copilot documentation](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-github-copilot-pro-subscription/getting-free-access-to-copilot-pro-as-a-student-teacher-or-maintainer#accessing-copilot-pro-for-free). They will also provide all of the details in the email.
+1. Follow the instructions in the [GitHub Copilot documentation](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-github-copilot-pro-subscription/getting-free-access-to-copilot-pro-as-a-student-teacher-or-maintainer#accessing-copilot-pro-for-free). 
+1. Go to the website to activate Copilot (remember to log in before): https://education.github.com/pack#github-copilot
+
+If your Copilot is successfully activated, you should see this:
+
+<img src="./img/copilot.png" alt="copilot" style="zoom:50%;" />
 
 
 

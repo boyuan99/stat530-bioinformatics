@@ -71,9 +71,12 @@ Note: Typically it's `Invoke-History`, but could be different if you've set cust
 Remove-Item Alias:r
 ```
 
+However, this **only lasts until** you restart PowerShell.
+
 
 
 ### Alternative Direct Execution
+
 If alias issues persist, you can directly call R.exe:
 ```powershell
 & "C:\Program Files\R\R-x.x.x\bin\R.exe"
