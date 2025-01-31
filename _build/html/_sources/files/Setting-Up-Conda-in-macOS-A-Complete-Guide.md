@@ -75,8 +75,13 @@ fi
 # <<< conda initialize <<<
 ```
 
-3. Close and reopen Terminal
-4. You should see `(base)` at the start of your prompt
+3. To enable automatic activation of the base environment when you open a new terminal:
+
+```bash
+conda config --set auto_activate_base true
+```
+4. Close and reopen Terminal
+5. You should see `(base)` at the start of your prompt
 
 
 
